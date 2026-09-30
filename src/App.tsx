@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Gallery from './pages/Gallery'
+import Menu from './pages/Menu'
 import Contact from './pages/Contact'
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hakkimizda" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/galeri" element={<Gallery />} />
           <Route path="/iletisim" element={<Contact />} />
           <Route path="*" element={<Home />} />

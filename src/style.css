@@ -115,6 +115,20 @@ p { margin-bottom: 12px; }
 .form .btn { align-self: flex-start; }
 .success { margin: 0; padding: 14px 18px; background: #ecfdf3; color: #166534; border-radius: 12px; font-weight: 500; }
 
+/* Menu (API) */
+.menu-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
+.menu-search { flex: 1; max-width: 420px; padding: 14px 20px; border: 1.5px solid #e7e5e4; border-radius: 999px; font: 400 1rem var(--sans); background: var(--card); transition: border-color .2s, box-shadow .2s; }
+.menu-search:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px rgba(200, 85, 61, .12); }
+.menu-count { color: var(--muted); font-weight: 500; }
+.tag { display: inline-block; margin-bottom: 8px; padding: 3px 10px; border-radius: 999px; background: rgba(200, 85, 61, .1); color: var(--primary); font-size: .75rem; font-weight: 600; }
+.menu-message { text-align: center; padding: 48px 16px; color: var(--muted); }
+.menu-source { margin: 40px 0 0; text-align: center; color: var(--muted); font-size: .85rem; }
+.menu-source a { color: var(--primary); font-weight: 600; }
+.skeleton .card-img, .skeleton-line { background: linear-gradient(90deg, #eee8e1 25%, #f7f3ee 50%, #eee8e1 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; }
+.skeleton-line { height: 14px; border-radius: 6px; margin-bottom: 10px; }
+.skeleton-line.short { width: 60%; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+
 /* Carousel */
 .carousel { max-width: 1000px; margin: 0 auto; outline: none; }
 .carousel:focus-visible .carousel-viewport { box-shadow: 0 0 0 4px rgba(200, 85, 61, .4); }
@@ -173,12 +187,15 @@ p { margin-bottom: 12px; }
 .copy { text-align: center; padding: 20px 16px; border-top: 1px solid rgba(255,255,255,.1); font-size: .85rem; margin: 0; }
 
 /* Responsive */
-@media (max-width: 860px) {
+@media (max-width: 1024px) {
   .menu-toggle { display: flex; }
   .header-inner { gap: 12px; }
   .header-actions { margin-left: auto; }
   .nav { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 20px; padding: 24px; background: rgba(28, 25, 23, 0.95); display: none; }
   .header.open .nav { display: flex; }
+}
+
+@media (max-width: 860px) {
   .split, .contact { grid-template-columns: 1fr; gap: 32px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }

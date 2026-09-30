@@ -2,6 +2,7 @@ const tr = {
   header: {
     home: 'Anasayfa',
     about: 'Hakkımızda',
+    menu: 'Menü',
     gallery: 'Galeri',
     contact: 'İletişim',
     reserve: 'Rezervasyon',
@@ -97,6 +98,19 @@ const tr = {
       kitchen: { title: 'Mutfağımız', caption: 'Her tabak şefimizin elinden geçer.' },
       guests: { title: 'Misafirlerimiz', caption: 'Sofralarımız hep dolu, hep neşeli.' },
     },
+  },
+  menu: {
+    title: 'Menü',
+    subtitle: 'Türk mutfağının sevilen lezzetleri.',
+    searchLabel: 'Yemek ara',
+    searchPlaceholder: 'Yemek ara...',
+    count: (n: number) => `${n} yemek`,
+    loading: 'Yemekler yükleniyor',
+    error: 'Yemekler yüklenemedi. Lütfen internet bağlantınızı kontrol edip tekrar deneyin.',
+    retry: 'Tekrar dene',
+    empty: 'Aramanızla eşleşen yemek bulunamadı.',
+    cuisine: 'Türk Mutfağı',
+    source: 'Yemek verileri:',
   },
   carousel: {
     prev: 'Önceki fotoğraf',

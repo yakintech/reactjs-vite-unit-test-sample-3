@@ -4,6 +4,7 @@ const en: Translations = {
   header: {
     home: 'Home',
     about: 'About Us',
+    menu: 'Menu',
     gallery: 'Gallery',
     contact: 'Contact',
     reserve: 'Book a Table',
@@ -99,6 +100,19 @@ const en: Translations = {
       kitchen: { title: 'Our Kitchen', caption: 'Every plate passes through our chef’s hands.' },
       guests: { title: 'Our Guests', caption: 'Our tables are always full and cheerful.' },
     },
+  },
+  menu: {
+    title: 'Menu',
+    subtitle: 'Beloved flavors of Turkish cuisine.',
+    searchLabel: 'Search dishes',
+    searchPlaceholder: 'Search dishes...',
+    count: (n: number) => `${n} ${n === 1 ? 'dish' : 'dishes'}`,
+    loading: 'Loading dishes',
+    error: 'Could not load the dishes. Please check your internet connection and try again.',
+    retry: 'Try again',
+    empty: 'No dishes match your search.',
+    cuisine: 'Turkish Cuisine',
+    source: 'Dish data:',
   },
   carousel: {
     prev: 'Previous photo',

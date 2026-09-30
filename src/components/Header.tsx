@@ -28,6 +28,7 @@ export default function Header() {
         <nav className="nav">
           <NavLink to="/" end>{t.header.home}</NavLink>
           <NavLink to="/hakkimizda">{t.header.about}</NavLink>
+          <NavLink to="/menu">{t.header.menu}</NavLink>
           <NavLink to="/galeri">{t.header.gallery}</NavLink>
           <NavLink to="/iletisim">{t.header.contact}</NavLink>
           <Link to="/iletisim" className="btn btn-sm">{t.header.reserve}</Link>

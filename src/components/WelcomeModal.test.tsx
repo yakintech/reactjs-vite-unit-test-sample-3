@@ -57,4 +57,11 @@ describe('WelcomeModal', () => {
             expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
         })
     })
+
+
+    //Add snapshot test for WelcomeModal
+    test('matches snapshot', () => {
+        const { asFragment } = renderWelcomeModal()
+        expect(asFragment()).toMatchSnapshot()
+    })
 })

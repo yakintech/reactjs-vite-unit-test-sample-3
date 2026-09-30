@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WelcomeModal > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="modal-backdrop"
+  >
+    <div
+      aria-labelledby="welcome-title"
+      aria-modal="true"
+      class="modal"
+      role="dialog"
+      style="--duration: 5000ms;"
+    >
+      <button
+        aria-label="Kapat"
+        class="modal-close"
+      >
+        ×
+      </button>
+      <img
+        alt=""
+        class="modal-img"
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80&auto=format&fit=crop"
+      />
+      <div
+        class="modal-body"
+      >
+        <span
+          class="eyebrow"
+        >
+          Hoş geldiniz
+        </span>
+        <h2
+          id="welcome-title"
+        >
+          Her tabakta bir hikâye
+        </h2>
+        <p>
+          2010'dan beri aynı tutkuyla: yerel üreticilerden gelen taze malzemeler, ustalıkla hazırlanan geleneksel tarifler.
+        </p>
+        <button
+          class="btn"
+        >
+          Keşfetmeye Başla
+        </button>
+      </div>
+      <div
+        class="modal-progress"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

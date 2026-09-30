@@ -1,4 +1,4 @@
-import { useRef, useState, type KeyboardEvent, type TouchEvent } from 'react'
+import { useEffect, useRef, useState, type KeyboardEvent, type TouchEvent } from 'react'
 import { img } from '../images'
 import { useLanguage } from '../i18n/LanguageContext'
 
@@ -44,6 +44,7 @@ export default function Carousel({ label, slides }: Readonly<Props>) {
     if (diff < -SWIPE_THRESHOLD) next()
     touchStartX.current = null
   }
+
 
   return (
     <section

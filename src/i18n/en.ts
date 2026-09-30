@@ -5,6 +5,7 @@ const en: Translations = {
     home: 'Home',
     about: 'About Us',
     menu: 'Menu',
+    blog: 'Blog',
     gallery: 'Gallery',
     contact: 'Contact',
     reserve: 'Book a Table',
@@ -113,6 +114,15 @@ const en: Translations = {
     empty: 'No dishes match your search.',
     cuisine: 'Turkish Cuisine',
     source: 'Dish data:',
+  },
+  blog: {
+    title: 'Blog',
+    subtitle: 'News, recipes and stories from our kitchen.',
+    readMore: 'Read more →',
+    readingTime: (min: number) => `${min} min read`,
+    back: '← All posts',
+    notFoundTitle: 'Post not found',
+    notFoundText: 'The post you are looking for may have been removed or moved.',
   },
   carousel: {
     prev: 'Previous photo',

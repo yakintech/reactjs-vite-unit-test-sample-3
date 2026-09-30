@@ -129,6 +129,21 @@ p { margin-bottom: 12px; }
 .skeleton-line.short { width: 60%; }
 @keyframes shimmer { to { background-position: -200% 0; } }
 
+/* Blog */
+.posts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+.post-card .card-img { display: block; aspect-ratio: 16 / 10; }
+.post-card h2 { font-size: 1.4rem; margin: 4px 0 10px; }
+.post-card h2 a:hover { color: var(--primary); }
+.post-card .card-body p:not(.post-meta) { margin-bottom: 16px; }
+.post-meta { color: var(--muted); font-size: .85rem; font-weight: 500; margin: 0; }
+.post-meta.light { color: rgba(255,255,255,.8); margin-bottom: 12px; }
+.post { max-width: 720px; font-size: 1.08rem; }
+.post p { margin-bottom: 20px; }
+.post-lead { font-family: var(--serif); font-size: 1.35rem; line-height: 1.5; color: var(--dark); }
+.post .link { display: inline-block; margin-top: 16px; }
+.not-found { min-height: 70vh; display: flex; align-items: center; }
+.not-found .btn { margin-top: 16px; }
+
 /* Carousel */
 .carousel { max-width: 1000px; margin: 0 auto; outline: none; }
 .carousel:focus-visible .carousel-viewport { box-shadow: 0 0 0 4px rgba(200, 85, 61, .4); }

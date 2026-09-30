@@ -7,6 +7,8 @@ import About from './pages/About'
 import Gallery from './pages/Gallery'
 import Menu from './pages/Menu'
 import Contact from './pages/Contact'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 
 export default function App() {
   const { pathname } = useLocation()
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/galeri" element={<Gallery />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/iletisim" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>

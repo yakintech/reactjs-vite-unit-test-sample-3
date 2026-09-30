@@ -3,6 +3,7 @@ const tr = {
     home: 'Anasayfa',
     about: 'Hakkımızda',
     menu: 'Menü',
+    blog: 'Blog',
     gallery: 'Galeri',
     contact: 'İletişim',
     reserve: 'Rezervasyon',
@@ -111,6 +112,15 @@ const tr = {
     empty: 'Aramanızla eşleşen yemek bulunamadı.',
     cuisine: 'Türk Mutfağı',
     source: 'Yemek verileri:',
+  },
+  blog: {
+    title: 'Blog',
+    subtitle: 'Mutfağımızdan haberler, tarifler ve hikâyeler.',
+    readMore: 'Devamını oku →',
+    readingTime: (min: number) => `${min} dk okuma`,
+    back: '← Tüm yazılar',
+    notFoundTitle: 'Yazı bulunamadı',
+    notFoundText: 'Aradığınız yazı kaldırılmış ya da adresi değişmiş olabilir.',
   },
   carousel: {
     prev: 'Önceki fotoğraf',
